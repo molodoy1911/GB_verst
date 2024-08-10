@@ -1,151 +1,206 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.left-header, .right-header {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 50px);
+  grid-template-rows: 50px;
+  place-items: center;
+  gap: 5px;
+  margin: 5px;
+}
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 header {
-    background-color: black;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 60px;
-}
-
-.left-header {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 50px);
-    grid-template-rows: 50px;
-    place-items: center;
-    gap: 5px;
-    margin: 5px;
-}
-
-.right-header {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 50px);
-    grid-template-rows: 50px;
-    place-items: center;
-    gap: 5px;
-    margin: 5px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 60px;
 }
 
 .left-header :nth-child(1) {
-    grid-column-start: 5;
+  grid-column-start: 3;
+}
+@media (max-width: 768px) {
+  .left-header :nth-child(1) {
+    grid-column-start: 2;
+  }
 }
 
 .right-header :nth-child(1) {
-    grid-column-start: -7;
+  grid-column-start: -5;
+}
+@media (max-width: 768px) {
+  .right-header :nth-child(1) {
+    grid-column-start: -4;
+  }
 }
 
 img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.logo{
-    height: 30px;
+.logo {
+  height: 30px;
 }
 
-.search {
-    height: 20px;
+.search, .cart, .user {
+  height: 20px;
 }
 
 .bars {
-    height: 17px;
-}
-
-.user {
-    height: 20px;
-}
-
-.cart {
-    height: 20px;
+  height: 17px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100%;
-    background-color: rgb(248, 237, 255);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100%;
+  background-color: #f4f2f3;
 }
 
 #main-img {
-    width: auto;
+  width: auto;
 }
 
 .left-main {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 .right-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right-main h1 {
+  margin: 5px;
 }
 
 p {
-    margin: 5px;
+  margin: 5px;
 }
 
 .brand-text-title {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .brand-text-secondary {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .man {
-    grid-area: man;
+  grid-area: man;
 }
 
 .woman {
-    grid-area: woman;
+  grid-area: woman;
 }
 
 .kids {
-    grid-area: kids;
+  grid-area: kids;
 }
 
 .accesories {
-    grid-area: accesories;
+  grid-area: accesories;
 }
-
-.accesories :first-child {
-    height: auto;
+.accesories:first-child {
+  height: auto;
 }
 
 .container-other {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: 
-    "man woman kids"
-    "accesories accesories accesories"
-    ;
-    gap: 20px;
-    margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "man woman kids" "accesories accesories accesories";
+  gap: 20px;
+  margin: 20px 150px 20px 150px;
 }
-
+@media (max-width: 768px) {
+  .container-other {
+    margin: 10px;
+    gap: 10px;
+  }
+}
 .container-other > div {
-    position: relative; /* Родительский контейнер для абсолютного позиционирования наложения */
-    overflow: hidden; /* Чтобы текст не выходил за границы изображения */
+  position: relative;
+  overflow: hidden;
+}
+.container-other .overlay {
+  position: absolute; /* Абсолютное позиционирование поверх изображения */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Flexbox для центрирования текста */
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+}
+.container-other .overlay .text {
+  color: white;
 }
 
-.overlay {
-    position: absolute; /* Абсолютное позиционирование поверх изображения */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex; /* Flexbox для центрирования текста */
-    justify-content: center; /* Центрирование по горизонтали */
-    align-items: center; /* Центрирование по вертикали */
-
+.container-fetured {
+  margin: 50px 150px 50px 150px;
 }
-
-.text {
-    color: white;
+.container-fetured .fetured-text, .container-fetured .fetured-text h2 {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 30px;
 }
+.container-fetured .fetured-text h2 {
+  margin: 5px;
+}
+.container-fetured .fetured-text p {
+  margin: 0;
+}
+.container-fetured .fetured-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.container-fetured .fetured-items .fetured-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  background-color: #f4f2f3;
+  gap: 15px;
+}
+.container-fetured .fetured-items .fetured-item h3 {
+  margin: 0 0 0 15px;
+}
+.container-fetured .fetured-items .fetured-item p {
+  margin: 0 0 0 15px;
+}
+.container-fetured .fetured-items .fetured-item p.cost {
+  margin-bottom: 15px;
+}
+.container-fetured .all-product {
+  margin: 15px;
+  display: grid;
+  justify-content: center;
+}
+.container-fetured .all-product .all-button {
+  padding: 10px 30px;
+  border: 2px solid #f4f2f3;
+  background-color: transparent;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer; /* Курсор в виде руки при наведении */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход для фона и цвета текста */
+}
+.container-fetured .all-product .all-button:hover {
+  background-color: #f4f2f3;
+}
+@media (max-width: 768px) {
+  .container-fetured {
+    margin: 10px;
+    gap: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */
