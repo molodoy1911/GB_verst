@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 60px;
@@ -203,4 +203,109 @@ p {
     margin: 10px;
     gap: 10px;
   }
+}
+
+.container-advantages {
+  margin: 0px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.container-advantages .advantages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  margin: 0 100px 0 100px;
+}
+.container-advantages .advantages .advantage {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  height: 100%;
+}
+.container-advantages .advantages .advantage img {
+  width: auto;
+  height: auto;
+}
+.container-advantages .advantages .advantage h4 {
+  color: white;
+}
+.container-advantages .advantages .advantage p {
+  color: white;
+  text-align: center;
+}
+
+.container-info {
+  margin: 0px;
+  height: 350px;
+  background: url(/images/info/subscribe.jpg) no-repeat;
+  background-size: cover;
+}
+.container-info .info {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container-info .info .about-me {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+.container-info .info .about-me img {
+  margin: 20px;
+  height: auto;
+  width: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.container-info .info .subscribe {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+.container-info .info .subscribe h2 {
+  margin: 0;
+}
+.container-info .info .subscribe p {
+  margin-bottom: 20px;
+}
+.container-info .info .subscribe .subscribe-container {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  border-radius: 50px;
+  overflow: hidden; /* Для округления краёв внутри контейнера */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+.container-info .info .subscribe .email-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 50px 0 0 50px; /* Закругление с левой стороны */
+  background-color: #f0f0f0;
+}
+.container-info .info .subscribe .subscribe-button {
+  padding: 15px 30px;
+  border: none;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 50px 50px 0; /* Закругление с правой стороны */
+  transition: background-color 0.3s ease;
+}
+.container-info .info .subscribe .subscribe-button:hover {
+  background-color: #f4f2f3;
+}
+
+footer {
+  margin: 0px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 20px 20px 50px;
+}
+footer .footer-text {
+  color: white;
 }/*# sourceMappingURL=main.css.map */
