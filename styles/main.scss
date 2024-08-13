@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
-$mainColor: #f4f2f3;
-$secondColor: rgba(0, 0, 0, 0.8);
+@import "_variables";
+@import "_bem";
 
 %nav-header {
     display: grid;
@@ -318,4 +317,8 @@ footer {
     .footer-text {
         color: white;
     }
+}
+
+.catalogContainer {
+    padding: 0 100px;
 }

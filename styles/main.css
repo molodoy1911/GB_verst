@@ -1,5 +1,40 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.b-headContainerBlock {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f2f3;
+  padding: 10px 100px;
+  margin-bottom: 10px;
+}
+.b-headContainerBlock__nav {
+  display: flex;
+  align-items: center;
+}
+
+.b-catalogContainerBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.b-catalogContainerBlock__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f2f3;
+  width: 300px;
+}
+.b-catalogContainerBlock__item_margin {
+  margin: 10px;
+}
+.b-catalogContainerBlock__img {
+  height: auto;
+}
+.b-catalogContainerBlock__h3 {
+  max-width: 360px;
+}
+.b-catalogContainerBlock__text {
+  max-width: 360px;
+}
 .left-header, .right-header {
   display: grid;
   grid-template-columns: repeat(auto-fill, 50px);
@@ -308,4 +343,8 @@ footer {
 }
 footer .footer-text {
   color: white;
+}
+
+.catalogContainer {
+  padding: 0 100px;
 }/*# sourceMappingURL=main.css.map */
