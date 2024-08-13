@@ -29,12 +29,7 @@
 .b-catalogContainerBlock__img {
   height: auto;
 }
-.b-catalogContainerBlock__h3 {
-  max-width: 360px;
-}
-.b-catalogContainerBlock__text {
-  max-width: 360px;
-}
+
 .left-header, .right-header {
   display: grid;
   grid-template-columns: repeat(auto-fill, 50px);

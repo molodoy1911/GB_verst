@@ -4,9 +4,6 @@
     background-color: $mainColor;
     padding: 10px 100px;
     margin-bottom: 10px;
-    &__text {
-        
-    }
     &__nav {
         display: flex;
         align-items: center;
@@ -28,17 +25,5 @@
     }
     &__img {
         height: auto;
-    }
-
-    &__h3 {
-        max-width: 360px;
-    }
-
-    &__text {
-        max-width: 360px;
-    }
-
-    &__cost {
-
     }
 }
