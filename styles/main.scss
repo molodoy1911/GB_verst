@@ -155,6 +155,7 @@ p {
     .fetured-text {
         display: grid;
         justify-content: center;
+        margin-bottom: 30px;
         h2 {
             @extend .fetured-text;
             margin: 5px;
@@ -162,7 +163,6 @@ p {
         p {
             margin: 0;
         }
-        margin-bottom: 30px;
     }
     .fetured-items {
         display: grid;

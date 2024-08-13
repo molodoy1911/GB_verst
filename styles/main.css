@@ -71,8 +71,7 @@ header {
 img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .logo {
@@ -342,4 +341,6 @@ footer .footer-text {
 
 .catalogContainer {
   padding: 0 100px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
