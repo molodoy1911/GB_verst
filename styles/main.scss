@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import "_variables";
 @import "_bem";
 
@@ -321,4 +322,9 @@ footer {
 
 .catalogContainer {
     padding: 0 100px;
+}
+
+.carouselMain {
+    width: 300px;
+    height: 500px;
 }
